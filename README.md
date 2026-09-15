@@ -5,10 +5,6 @@ A menu-driven Selcall box for an HF amateur transceiver: pick a contact on a
 Selcall burst. It also listens continuously on receive audio and pops up an
 alert with the caller's ID when a valid Selcall is decoded.
 
-**Read this whole file before wiring anything to your radio.** The audio
-interface section in particular has values you must adjust for your specific
-transceiver.
-
 ---
 
 ## 1. What protocol this actually implements
@@ -29,8 +25,3 @@ channel in Australia/NZ) is CODAN's implementation of **CCIR 493-4**. It is
 | Preamble           | ~2.0s (200 bits) alternating tone, matching a real IC-7610 TX reference — see §1.1 |
 | Framing            | 12-word phasing pattern, then an 18-word message (address sent twice, interleaved with control words, for redundancy) |
 
-This firmware's **encoder is a faithful port** of the openly published
-reference implementation (M. Jessop/VK5QI's `CCIR493-4.py`, itself derived
-from the QITX project and analysis of real CODAN traffic), so a correctly
-wired TX chain should produce a burst that rings a real CODAN (or
-CCIR‑493‑4‑compatible Barrett, etc.) radio.
