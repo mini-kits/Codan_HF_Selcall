@@ -1,4 +1,4 @@
-1. What protocol this actually implements
+What protocol this actually implements
 
 "CODAN Selcall" (as used on amateur HF, e.g. the 7045 kHz Selcall calling channel in Australia/NZ) is CODAN's implementation of CCIR 493-4. It is not the simple sequential-tone system (ZVEI/EEA/EIA/etc.) — it's a 2-tone FSK data protocol:
 Parameter 	Value
